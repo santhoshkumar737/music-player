@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <div class="cover">
+      <img id="thumbnail" src="https://via.placeholder.com/200" alt="cover">
+    </div>
+
+    <h2 id="title">Song Title</h2>
+    <h4 id="artist">Artist</h4>
+
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button id="shuffle">🔀</button>
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+      <button id="repeat">🔁</button>
+    </div>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time">
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <input type="range" id="volume" min="0" max="1" step="0.01">
+
+    <div class="playlist">
+      <h3>Playlist</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
